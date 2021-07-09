@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "1086875691898",
+    "firebase_url": "https://diva-wear-e2b71.firebaseio.com",
+    "project_id": "diva-wear-e2b71",
+    "storage_bucket": "diva-wear-e2b71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086875691898:android:901747b58d3ab46e42c4c3",
+        "android_client_info": {
+          "package_name": "com.code.diva_wear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086875691898-jpa9sc19vr6fjk52bdct3sakh2hjsrgu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.code.diva_wear",
+            "certificate_hash": "d5a9926ea6cf282c53471f3051ffdd59b060919d"
+          }
+        },
+        {
+          "client_id": "1086875691898-i9h5isfenr532aji0cinmfhhdrgr8cfq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.code.diva_wear",
+            "certificate_hash": "13344e5f33f57b811ccc550975cfd0166fb524a2"
+          }
+        },
+        {
+          "client_id": "1086875691898-1c8jieg18qqiou47lgt8bscodjujnnev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.code.diva_wear",
+            "certificate_hash": "a2b45656d70629e1ffa3f4a45ace203e5b9e5011"
+          }
+        },
+        {
+          "client_id": "1086875691898-s3fet8si3ck0ru9jce82tgc4f1bopsrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpEZow7PevxS8JENWhYdNkimjWUaPHXOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086875691898-s3fet8si3ck0ru9jce82tgc4f1bopsrg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1086875691898-5dunsrv13vmk90c7fq8nnnbqcvgp79bf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "diva-wear.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

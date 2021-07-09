@@ -1,0 +1,20 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeProductsLargeImage">
+
+        <ImageView
+            android:id="@+id/small_image_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:padding="1dp"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+</layout>

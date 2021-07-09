@@ -1,0 +1,18 @@
+<layout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/back_dialog_white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+</LinearLayout>
+</layout>

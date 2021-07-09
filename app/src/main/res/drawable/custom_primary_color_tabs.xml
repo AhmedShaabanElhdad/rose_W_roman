@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/back_solid_color_primery_7dp" android:state_selected="true"/>
+    <item android:drawable="@drawable/back_solid_shadow_blue" android:state_selected="false"/>
+</selector>

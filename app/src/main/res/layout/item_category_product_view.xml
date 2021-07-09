@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="pref"
+            type="com.smartzone.myapp.utilis.SavePrefs" />
+
+        <import type="com.smartzone.myapp.utilis.LanguageType" />
+        <import type="android.view.View"/>
+    </data>
+
+<!--            android:layoutDirection="@{pref.language.equals(LanguageType.ARABIC.lang)?View.LAYOUT_DIRECTION_RTL:View.LAYOUT_DIRECTION_LTR}"-->
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_header"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/name"
+                    android:fontFamily="@font/neo_sans_medium"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/title_categories"
+                    android:textSize="@dimen/txt18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_more"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/neo_sans_medium"
+                    android:textColor="@color/colorAccent"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/tittle_more"
+                    android:textSize="@dimen/txt15" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/empty"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_5sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neo_sans_medium"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/title_categories"
+                android:layout_gravity="start"
+                android:visibility="gone"
+                android:id="@+id/category_header"
+                android:textSize="@dimen/txt18" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_margin="@dimen/_5sdp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

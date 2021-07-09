@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        tools:context="com.smartzone.myapp.ui.products.product_details.ProductDetailsActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@color/colorPrimary"
+            android:layoutDirection="ltr"
+            android:translationZ="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/neo_sans_medium"
+                android:src="@drawable/ic_back_primary_color"
+                android:textSize="@dimen/txt20"
+                app:tint="@color/grey" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/neo_sans_medium"
+                android:padding="@dimen/_5sdp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/tittle_method_payment"/>
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/neo_sans_medium"
+                android:src="@drawable/ic_notifications"
+                android:textSize="@dimen/txt20"
+                app:tint="@color/grey" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_white_top_raduis"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@color/white_grey"
+                        android:fontFamily="@font/neo_sans_medium"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/tittle_method_payment"
+                        android:textAlignment="viewStart"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt16" />
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:checked="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/neo_sans_medium"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:background="@drawable/shape_rect_extra_round_white_bg_green_border_1dp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/title_delivery_paid"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/dark_grey" />
+
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/back_solid_color_primery_7dp"
+                    android:text="@string/tittle_confirm"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>

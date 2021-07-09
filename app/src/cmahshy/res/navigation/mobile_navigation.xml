@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.smartzone.myapp.ui.main.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.smartzone.myapp.ui.main.orders.RequestsFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.smartzone.myapp.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="com.smartzone.myapp.ui.main.categories.CategoryFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_navigation_categories_to_navigation_subcategories"
+            app:destination="@id/navigation_subcategories" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/navigation_subcategories"
+        android:name="com.smartzone.myapp.ui.main.categories.SubCategoriesFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/fragment_sub_categories">
+
+        <argument android:name="main_id"
+            app:argType="string"
+            app:nullable="false"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.smartzone.myapp.ui.main.favourite.FavouriteFragment"
+        android:label="@string/title_favourite"
+        tools:layout="@layout/favourite_fragment" />
+
+    <action
+        android:id="@+id/home"
+        app:destination="@id/navigation_home"
+        app:popUpTo="@id/navigation_home"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.smartzone.myapp.ui.main.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/settings_fragment" >
+        <action
+            android:id="@+id/action_navigation_setting_to_navigation_favourite"
+            app:destination="@id/navigation_favourite" />
+        <action
+            android:id="@+id/action_navigation_setting_to_navigation_offers"
+            app:destination="@id/navigation_offers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_offers"
+        android:name="com.smartzone.myapp.ui.main.offer.OfferFragment"
+        android:label="@string/title_offer"
+        tools:layout="@layout/offer_fragment" >
+
+    </fragment>
+
+
+    <action
+        android:id="@+id/cart"
+        app:destination="@id/navigation_cart"
+        app:popUpTo="@id/navigation_cart"
+        app:popUpToInclusive="true" />
+</navigation>

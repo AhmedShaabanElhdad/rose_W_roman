@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "431102688426",
+    "project_id": "horizon-ef92b",
+    "storage_bucket": "horizon-ef92b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431102688426:android:61a843bf4ff95dd890e4d3",
+        "android_client_info": {
+          "package_name": "com.codegrow.horizon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431102688426-u79aae4kdbflt52r5815bmthjo8f79b7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codegrow.horizon",
+            "certificate_hash": "13344e5f33f57b811ccc550975cfd0166fb524a2"
+          }
+        },
+        {
+          "client_id": "431102688426-uoshhh0j36hpmevqed62ga08h9sbrqg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAToh2Kg3ZTi_1gx37J8AT9dvv0zYECBSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431102688426-uoshhh0j36hpmevqed62ga08h9sbrqg3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "431102688426-dqi90dn68qfrj7mmukg16u85sa1cu128.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.horizon.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

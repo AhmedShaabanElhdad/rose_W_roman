@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "620854635466",
+    "project_id": "sa3d-a460f",
+    "storage_bucket": "sa3d-a460f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620854635466:android:cf3a77f3bfdb8187affd33",
+        "android_client_info": {
+          "package_name": "com.code.sa3d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620854635466-8m3s96jamlh4n98vfmjubouup049q782.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.code.sa3d",
+            "certificate_hash": "13344e5f33f57b811ccc550975cfd0166fb524a2"
+          }
+        },
+        {
+          "client_id": "620854635466-38255sh5liln73cmafmlj6hbkq1vst78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOc927Fr81qX2X7KQaBME9WfKqk3OlkIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620854635466-38255sh5liln73cmafmlj6hbkq1vst78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

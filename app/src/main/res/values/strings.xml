@@ -1,0 +1,152 @@
+<resources>
+    <string name="title_cart">cart</string>
+    <string name="title_orders">ordes</string>
+    <string name="title_home">main</string>
+    <string name="title_favourite">favourite</string>
+    <string name="title_settings">settings</string>
+    <string name="loading">loading</string>
+    <string name="search">searching ...</string>
+    <string name="title_categories">categories</string>
+    <string name="highPrice">high price</string>
+    <string name="lowPrice">low price</string>
+    <string name="productDetails">product details</string>
+    <string name="title_description">product description</string>
+    <string name="title_quentity">required quantity</string>
+    <string name="add_cart">add to cart</string>
+    <string name="similarProduct">"similar product "</string>
+    <string name="title_add_success">product added successfully to cart</string>
+    <string name="title_doneBuy">finish buying process</string>
+    <string name="title_anotherProduct">other product</string>
+
+
+    <string name="title_welcome">Welcome </string>
+    <string name="title_please">Please Register</string>
+    <string name="title_phone">phone </string>
+    <string name="title_enter_phone">please enter your phone</string>
+    <string name="title_passowrd">password</string>
+    <string name="title_enter_password">please enter your password</string>
+    <string name="title_login">login</string>
+    <string name="title_visitor">browse without register</string>
+    <string name="title_forget_passowrd">forget password</string>
+    <string name="title_no_have_account">"don't have account"</string>
+    <string name="title_press">press here</string>
+    <string name="title_done">done</string>
+    <string name="title_user_name">user name</string>
+    <string name="title_enteer_user_name">please enter user name</string>
+    <string name="title_create_account">create account</string>
+    <string name="title_city">city</string>
+    <string name="title_have_account">have already account</string>
+    <string name="title_enter_city">please choose city</string>
+    <string name="field_required">required field</string>
+    <string name="title_enter_return_password">get password again</string>
+    <string name="tittle_confirm">confirm</string>
+    <string name="tittle_confirm_order">confirm Order</string>
+    <string name="title_order_prview">order preview</string>
+    <string name="title_total">total</string>
+    <string name="doneAddCart">added successfully to cart</string>
+    <string name="isAlerdyExsist">product already exist</string>
+    <string name="map_key">AIzaSyCE29pCYj3ntftgARbTP0FA8xZyLBCF7f8</string>
+    <string name="title_total_amount">total amount</string>
+    <string name="tittle_location_delivery">delivery location</string>
+    <string name="title_location">shipping location</string>
+    <string name="tittle_method_payment">payment method</string>
+    <string name="title_delivery_paid">cash in delivery</string>
+    <string name="tittle_select_location">select location</string>
+    <string name="title_detail_delivery">delivery detail </string>
+    <string name="reviewOrder">order review</string>
+    <string name="delivery">shipping</string>
+    <string name="allPrice">total price</string>
+    <string name="tittle_quantity">quantity :</string>
+    <string name="mustDelviry">must choose shipping location</string>
+    <string name="mustSelectCity">Must select city</string>
+    <string name="tittle_done_send">order send successfully</string>
+    <string name="tittle_go_to_home">back to home</string>
+    <string name="tittle_order_num">order number</string>
+    <string name="tittle_more">show more</string>
+    <string name="numberOfProduct">product number: </string>
+    <string name="thereIsNoProduct">there is no product to start buying</string>
+    <string name="title_follow_order">follow order</string>
+    <string name="orderDetail">order details</string>
+    <string name="orderDate">date of order</string>
+    <string name="tittle_line">on way to you</string>
+    <string name="tittleSend">was sent</string>
+    <string name="tittle_road">on way to you</string>
+    <string name="tittle_done_delivery">delivery done</string>
+    <string name="notification">notification</string>
+    <string name="title_profile">profile</string>
+    <string name="title_contactUs">contact us</string>
+    <string name="title_logout">logout</string>
+    <string name="title_name">name</string>
+    <string name="tittle_save_change">save change</string>
+    <string name="title_message">message</string>
+    <string name="title_enter_message">please enter message</string>
+    <string name="send">send</string>
+    <string name="tittleSotial">by social network</string>
+    <string name="yourRequest">Your Request has been sent successfully</string>
+    <string name="currency">EGP</string>
+    <string name="title_specific_size">choose size </string>
+    <string name="title_specific_color">choose color</string>
+    <string name="title_enter_size">please choose suitable size </string>
+    <string name="title_enter_color">please choose suitable color </string>
+    <string name="mustSelectSize">must choose suitable Size </string>
+    <string name="mustSelectColor">must choose suitable color</string>
+    <string name="default_notification_channel_id">channel</string>
+    <string name="title_enter_vervication">verify account</string>
+    <string name="phone_verify">Verification Code</string>
+    <string name="enter_valid_phone">please enter valid phone start with 0</string>
+    <string name="facebook_login">sign in with Facebook</string>
+    <string name="googke_login">sign in with Google</string>
+    <string name="check_term"><![CDATA[Check Terms & Condition]]></string>
+    <string name="before_signup">By Signing up you Accept terms and condition</string>
+    <string name="or">Or</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="facebook_app_id" translatable="false">2273804792766084</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2273804792766084</string>
+    <string name="signin_error">error in sign in</string>
+    <string name="hasPromoCode">has promo code</string>
+    <string name="email">email</string>
+    <string name="title_enteer_email">please enter your email</string>
+    <string name="confirm">confirm</string>
+    <string name="activete">activete </string>
+    <string name="please_register">Please register to continue processing</string>
+    <string name="cancel">cancel</string>
+    <array name="tittles_requests">
+        <item>current order</item>
+        <item>previous order</item>
+    </array>
+
+
+    <string name="login">تسجيل دخول</string>
+    <string name="title_one_code_for_order">one code for order</string>
+    <string name="all">all</string>
+    <string name="subscribe">subscribe</string>
+    <string name="promoCode">promoCode</string>
+    <string name="price">price</string>
+    <string name="partial_price">partial price</string>
+    <string name="discount">discount</string>
+    <string name="shipping_price">shipping price</string>
+    <string name="tax">additional tax</string>
+    <string name="change_password">change password</string>
+    <string name="register">register</string>
+    <string name="terms_condition">terms and condition</string>
+    <string name="tittle_see_done_order">see your order in order page</string>
+    <string name="empty_product">there is no product in cart</string>
+    <string name="mustLocation">must determine location</string>
+    <string name="title_offer">offer</string>
+    <string name="address_details">address details</string>
+    <string name="tittle_add_address">add new address</string>
+    <string name="tittle_determine_address">determine address</string>
+    <string name="title_language">language</string>
+    <string name="tittle_choose_location">choose location</string>
+    <string name="title_location_name">location name</string>
+    <string name="missmatch">miss matched</string>
+
+
+
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+
+
+</resources>

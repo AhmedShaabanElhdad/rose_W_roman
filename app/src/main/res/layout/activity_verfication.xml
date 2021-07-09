@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.smartzone.myapp.ui.forget_password.ForgetPassordViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.smartzone.myapp.ui.forget_password.ForgetPasswordActivity">
+
+        <LinearLayout
+            android:id="@+id/header_with_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/neo_sans_medium"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/title_enter_return_password"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:src="@drawable/ic_back_primary_color" />
+
+        </LinearLayout>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_10sdp"-->
+<!--            android:layout_marginTop="@dimen/_15sdp"-->
+<!--            android:layout_marginEnd="@dimen/_10sdp"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:src="@drawable/arrowright"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_10sdp"-->
+<!--            android:layout_marginTop="@dimen/_15sdp"-->
+<!--            android:fontFamily="@font/neo_sans_medium"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:text="@string/title_enter_vervication"-->
+<!--            android:textSize="@dimen/txt16"-->
+<!--            app:layout_constraintStart_toEndOf="@id/back"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/neo_sans_medium"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/logo"
+            android:textSize="@dimen/txt18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_with_back" />
+
+        <TextView
+            android:id="@+id/tittle_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/neo_sans_medium"
+            android:padding="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:text="@string/phone_verify"
+            android:textSize="@dimen/txt18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/firstPinView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tittle_phone"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="#A6A6A6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="#3DC5EB"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="5dp"
+            app:itemWidth="48dp"
+            app:lineColor="@drawable/bg_phone_verification"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/back_color_primary_et"
+            android:fontFamily="@font/neo_sans_medium"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/tittle_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstPinView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

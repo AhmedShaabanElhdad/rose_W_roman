@@ -1,0 +1,27 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=DD:C0:74:10:8F:6F:C5:AA:9B:11:A8:1E:2F:75:11:7E:8A:21:32:22%3Bcom.smartzone.diva_wear.ui
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.smartzone.diva_wear.ui
+
+    SHA-1 certificate fingerprint:
+    DD:C0:74:10:8F:6F:C5:AA:9B:11:A8:1E:2F:75:11:7E:8A:21:32:22
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+
+<!--    AIzaSyCsgB359mS8WqL83OO4PYx02oS80pywQVg   -->
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCE29pCYj3ntftgARbTP0FA8xZyLBCF7f8</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.smartzone.myapp.ui.customView.MyRadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layoutDirection="rtl"
+    android:buttonTint="@color/colorPrimary"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/shape_rect_extra_round_white_bg_green_border_1dp"
+    android:fontFamily="@font/neo_sans_medium"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:textColor="@color/dark_grey" />
