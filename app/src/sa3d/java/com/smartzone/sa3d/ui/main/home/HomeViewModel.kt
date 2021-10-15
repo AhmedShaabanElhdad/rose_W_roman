@@ -1,13 +1,13 @@
-package com.smartzone.rose_roman.ui.main.home
+package com.smartzone.sa3d.ui.main.home
 
 import androidx.lifecycle.MutableLiveData
-import com.smartzone.rose_roman.data.repositery.HomeRepository
-import com.smartzone.rose_roman.data.utils.Result
-import com.smartzone.rose_roman.ui.base.BaseViewModel
-import com.smartzone.rose_roman.utilis.rx.SchedulerProvider
-import com.smartzone.rose_roman.utilis.rx.with
-import com.smartzone.rose_roman.data.pojo.Slider
-import com.smartzone.rose_roman.data.reponse.ResponseCategory
+import com.smartzone.myapp.data.repositery.HomeRepository
+import com.smartzone.myapp.data.utils.Result
+import com.smartzone.myapp.ui.base.BaseViewModel
+import com.smartzone.myapp.utilis.rx.SchedulerProvider
+import com.smartzone.myapp.utilis.rx.with
+import com.smartzone.myapp.data.pojo.Slider
+import com.smartzone.myapp.data.reponse.ResponseCategory
 
 class HomeViewModel(private val homeRepository: HomeRepository, private val schedulerProvider: SchedulerProvider) : BaseViewModel() {
     //val mainResponse=MutableLiveData<MainResonse>()

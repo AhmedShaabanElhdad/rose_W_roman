@@ -1,4 +1,4 @@
-package com.smartzone.rose_roman.ui.main.home
+package com.smartzone.sa3d.ui.main.home
 
 import android.icu.util.UniversalTimeScale.MAX_SCALE
 import android.os.Bundle
@@ -9,25 +9,25 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.viewpager.widget.ViewPager
 import com.michael.easydialog.EasyDialog
-import com.smartzone.rose_roman.MyApp
+import com.smartzone.myapp.MyApp
 import com.smartzone.diva_wear.R
 import com.smartzone.diva_wear.databinding.FragmentHomeBinding
-import com.smartzone.rose_roman.ui.base.BaseFragment
-import com.smartzone.rose_roman.ui.base.BaseViewModel
-import com.smartzone.rose_roman.ui.main.MainActivity
-import com.smartzone.rose_roman.ui.order_details.details.OrderDetailsViewModel
-import com.smartzone.rose_roman.ui.products.ProductViewModel
-import com.smartzone.rose_roman.ui.products.ProductsActivity
-import com.smartzone.rose_roman.ui.products.ProductsAdapter
-import com.smartzone.rose_roman.ui.products.product_details.ProductDetailsActivity
-import com.smartzone.rose_roman.utilis.SavePrefs
-import com.smartzone.rose_roman.utilis.CATEGORY_ID
-import com.smartzone.rose_roman.utilis.ID_SEARCH
-import com.smartzone.rose_roman.utilis.ID_KEY
-import com.smartzone.rose_roman.utilis.ViewUtils
-import com.smartzone.rose_roman.data.pojo.Category
-import com.smartzone.rose_roman.data.pojo.Slider
-import com.smartzone.rose_roman.data.pojo.User
+import com.smartzone.myapp.ui.base.BaseFragment
+import com.smartzone.myapp.ui.base.BaseViewModel
+import com.smartzone.myapp.ui.main.MainActivity
+import com.smartzone.myapp.ui.order_details.details.OrderDetailsViewModel
+import com.smartzone.myapp.ui.products.ProductViewModel
+import com.smartzone.myapp.ui.products.ProductsActivity
+import com.smartzone.myapp.ui.products.ProductsAdapter
+import com.smartzone.myapp.ui.products.product_details.ProductDetailsActivity
+import com.smartzone.myapp.utilis.SavePrefs
+import com.smartzone.myapp.utilis.CATEGORY_ID
+import com.smartzone.myapp.utilis.ID_SEARCH
+import com.smartzone.myapp.utilis.ID_KEY
+import com.smartzone.myapp.utilis.ViewUtils
+import com.smartzone.myapp.data.pojo.Category
+import com.smartzone.myapp.data.pojo.Slider
+import com.smartzone.myapp.data.pojo.User
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 

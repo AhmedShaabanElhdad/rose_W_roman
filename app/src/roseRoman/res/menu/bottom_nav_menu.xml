@@ -3,14 +3,14 @@
 
 
     <item
-        android:id="@+id/navigation_categories"
-        android:icon="@drawable/prescription"
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/offers"
         android:iconTint="@color/red"
-        android:title="@string/title_prescription" />
+        android:title="@string/title_offer" />
 
     <item
         android:id="@+id/navigation_orders"
-        android:icon="@drawable/request"
+        android:icon="@drawable/orders"
         android:iconTint="@color/red"
         android:title="@string/title_orders" />
 
@@ -21,13 +21,13 @@
 
     <item
         android:id="@+id/navigation_cart"
-        android:icon="@drawable/my_cart"
+        android:icon="@drawable/cart2"
         android:iconTint="@color/red"
         android:title="@string/title_cart" />
 
     <item
         android:id="@+id/navigation_setting"
-        android:icon="@drawable/more"
+        android:icon="@drawable/settings"
         android:iconTint="@color/red"
         android:title="@string/title_settings" />
 

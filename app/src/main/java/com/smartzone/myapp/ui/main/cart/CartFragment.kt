@@ -40,6 +40,9 @@ class CartFragment : BaseFragment<FragmentCartBinding>() {
             binding.shippingPrice.text = this.price
         }
 
+        if (BuildConfig.TAX.toFloat()==0.0f)
+            binding.taxlayout.visibility = View.GONE
+
         val myList = cart.getCartList()
         if (myList.size > 0) {
             binding.empty.visibility = View.GONE

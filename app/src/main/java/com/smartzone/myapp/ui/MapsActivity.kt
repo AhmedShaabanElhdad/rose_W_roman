@@ -181,7 +181,7 @@ class MapsActivity : BaseActivity<ActivityMapsBinding>(), OnMapReadyCallback,
         viewModel.success.observe(this, Observer {
             if (it) {
 
-                startActivity(OrderDetailsActivity.getIntent(this, promocode, mAddress))
+                startActivity(OrderDetailsActivity.getIntent(this, promocode, mAddress,mLat.toString(),mLon.toString()))
 
 //                val returnIntent = Intent()
 //                returnIntent.putExtra("lat", mLat)

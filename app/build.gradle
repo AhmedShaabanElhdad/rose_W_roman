@@ -33,7 +33,7 @@ android {
         divaWear {
             minSdkVersion 21
             applicationId "com.code.diva_wear"
-            targetSdkVersion 29
+            targetSdkVersion 30
             versionCode 1
             versionName '1.0'
             buildConfigField "String", "URL_BASE", '"https://diva.com/"'
@@ -43,7 +43,7 @@ android {
         roseRoman {
             minSdkVersion 21
             applicationId "com.code.rose_roman"
-            targetSdkVersion 29
+            targetSdkVersion 30
             versionCode 4
             versionName '1.3'
             buildConfigField "String", "TAX", '"0.14f"'
@@ -52,7 +52,7 @@ android {
         cmahshy {
             minSdkVersion 21
             applicationId "com.code.cmahshy"
-            targetSdkVersion 29
+            targetSdkVersion 30
             versionCode 4
             versionName '1.3'
             buildConfigField "String", "TAX", '"0f"'
@@ -62,7 +62,7 @@ android {
         horizon {
             minSdkVersion 21
             applicationId "com.codegrow.horizon"
-            targetSdkVersion 29
+            targetSdkVersion 30
             versionCode 1
             versionName '1.0'
             buildConfigField "String", "TAX", '"0.14f"'
@@ -72,10 +72,10 @@ android {
         sa3d {
             minSdkVersion 21
             applicationId "com.code.sa3d"
-            targetSdkVersion 29
-            versionCode 1
-            versionName '1.0'
-            buildConfigField "String", "TAX", '"0.14f"'
+            targetSdkVersion 30
+            versionCode 2
+            versionName '1.1'
+            buildConfigField "String", "TAX", '"0"'
             buildConfigField "String", "URL_BASE", '"https://code-grow.com/sa3d/"'
         }
     }

@@ -48,7 +48,10 @@ class SettingsFragment : Fragment() {
         if (BuildConfig.FLAVOR == "horizon") {
             binding.languageLinear.visibility = View.VISIBLE
             binding.languageView.visibility = View.VISIBLE
+            binding.offers.visibility = View.VISIBLE
         }
+        if (BuildConfig.FLAVOR == "roseRoman")
+            binding.offers.visibility = View.VISIBLE
 
         binding.notification.setOnClickListener {
             (activity as MainActivity).openNotification()
@@ -57,6 +60,7 @@ class SettingsFragment : Fragment() {
         binding.changePassword.setOnClickListener {
             startActivity(ChangePasswordActivity.getIntent(requireContext()))
         }
+
 
         handleClick()
         super.onViewCreated(view, savedInstanceState)
@@ -98,6 +102,7 @@ class SettingsFragment : Fragment() {
         binding.languageLinear.setOnClickListener {
 
         }
+
         binding.offers.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_setting_to_navigation_offers)
         }

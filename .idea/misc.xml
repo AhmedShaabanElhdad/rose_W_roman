@@ -3,15 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/flutter/rose_roman/app/src/cmahshy/res/layout/settings_fragment.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/divaWear/res/layout/settings_fragment.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/horizon/res/layout/activity_register.xml" value="0.2421875" />
         <entry key="..\:/flutter/rose_roman/app/src/horizon/res/layout/fragment_prerequest.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/horizon/res/layout/item_product.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/horizon/res/layout/settings_fragment.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/horizon/res/menu/bottom_nav_menu.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/back_bottom_raduis.xml" value="0.25833333333333336" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/back_color_acccent_et.xml" value="0.25833333333333336" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/back_dialog_white.xml" value="0.25833333333333336" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/back_roound_white.xml" value="0.25833333333333336" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/back_solid_shadow_blue.xml" value="0.25833333333333336" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/back_white_bottom_raduis.xml" value="0.25833333333333336" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.25833333333333336" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/layerarrow.xml" value="0.25833333333333336" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/line_drawaable.xml" value="0.13802083333333334" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/shape_rect_extra_round_white_bg_primary_color_border_1dp.xml" value="0.25833333333333336" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/tab_indicator_default.xml" value="0.17314814814814813" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.17314814814814813" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/drawable/tab_selector.xml" value="0.17314814814814813" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_change_password.xml" value="0.264" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_confirm_order_details.xml" value="0.2421875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_contact_us.xml" value="0.264" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_done_order.xml" value="0.121875" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_full_screen_image_scroll.xml" value="0.2421875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_maps.xml" value="0.2421875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_order_address.xml" value="0.2421875" />
@@ -20,10 +36,19 @@
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_profile.xml" value="0.2421875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/activity_request_details.xml" value="0.11778115501519756" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/fragment_cart.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/item_cart_view.xml" value="0.121875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/item_category_product_view.xml" value="0.2421875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/item_product_confirm.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/layout_city_dialog.xml" value="0.121875" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/layout/settings_fragment.xml" value="0.2" />
         <entry key="..\:/flutter/rose_roman/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/flutter/rose_roman/app/src/roseRoman/res/layout/settings_fragment.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/roseRoman/res/menu/bottom_nav_menu.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/sa3d/res/layout/activity_register.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/sa3d/res/layout/fragment_home.xml" value="0.121875" />
+        <entry key="..\:/flutter/rose_roman/app/src/sa3d/res/layout/item_product.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/sa3d/res/layout/settings_fragment.xml" value="0.2421875" />
+        <entry key="..\:/flutter/rose_roman/app/src/sa3d/res/menu/bottom_nav_menu.xml" value="0.2421875" />
       </map>
     </option>
   </component>

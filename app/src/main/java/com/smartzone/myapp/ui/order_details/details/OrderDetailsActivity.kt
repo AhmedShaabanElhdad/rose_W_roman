@@ -18,6 +18,8 @@ class OrderDetailsActivity : BaseActivity<ActivityOrderDetailsBinding>() {
     var selectCity: City? = null
     var promocode = ""
     var address = ""
+    var lon="0"
+    var lat="0"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +29,8 @@ class OrderDetailsActivity : BaseActivity<ActivityOrderDetailsBinding>() {
 
         promocode = intent.extras?.getString("promocode", "").toString()
         address = intent.extras?.getString("address", "").toString()
+        lat = intent.extras?.getString("lat", "0").toString()
+        lon = intent.extras?.getString("lon", "0").toString()
 
 
         binding.notification.setOnClickListener {
@@ -34,7 +38,7 @@ class OrderDetailsActivity : BaseActivity<ActivityOrderDetailsBinding>() {
         }
         binding.back.setOnClickListener { onBackPressed() }
         binding.confirm.setOnClickListener {
-            startActivity(ConfirmOrderDetailsActvity.getIntent(this, promocode,address))
+            startActivity(ConfirmOrderDetailsActvity.getIntent(this, promocode,address,lat,lon))
         }
     }
 
@@ -49,10 +53,12 @@ class OrderDetailsActivity : BaseActivity<ActivityOrderDetailsBinding>() {
 
     companion object {
 
-        fun getIntent(context: Context, promocode: String, address: String): Intent {
+        fun getIntent(context: Context, promocode: String, address: String,latitude:String,longitude:String): Intent {
             val intent = Intent(context, OrderDetailsActivity::class.java)
             intent.putExtra("promocode", promocode)
             intent.putExtra("address", address)
+            intent.putExtra("lat", latitude)
+            intent.putExtra("lon", longitude)
             return intent
         }
     }

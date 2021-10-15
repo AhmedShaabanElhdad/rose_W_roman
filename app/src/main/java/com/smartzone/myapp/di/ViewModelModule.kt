@@ -1,7 +1,7 @@
 package com.smartzone.myapp.di
 
-import com.smartzone.horizon.ui.main.home.HomeViewModel2
-import com.smartzone.horizon.ui.main.prerequest.PrerequestViewModel
+//import com.smartzone.horizon.ui.main.home.HomeViewModel2
+//import com.smartzone.horizon.ui.main.prerequest.PrerequestViewModel
 import com.smartzone.myapp.ui.confirm_order.ConfirmOrderDetailsViewModel
 import com.smartzone.myapp.ui.contact_us.ContactusViewModel
 import com.smartzone.myapp.ui.forget_password.ForgetPassordViewModel
@@ -18,15 +18,16 @@ import com.smartzone.myapp.ui.profile.ProfileViewModel
 import com.smartzone.myapp.ui.register.RegisterViewModel
 import com.smartzone.myapp.utilis.rx.ApplicationSchedulerProvider
 import com.smartzone.myapp.utilis.rx.SchedulerProvider
+import com.smartzone.sa3d.ui.main.home.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 
 val viewModleModule= module {
-    viewModel { HomeViewModel2(get(),get()) }
-    viewModel { PrerequestViewModel(get(),get()) }
-//    viewModel { HomeViewModel(get(),get()) }
+//    viewModel { HomeViewModel2(get(),get()) }
+//    viewModel { PrerequestViewModel(get(),get()) }
     viewModel { ProductViewModel(get(),get(),get()) }
+    viewModel { HomeViewModel(get(),get()) }
     viewModel { LoginViewModel(get(),get()) }
     viewModel { RegisterViewModel(get(),get(),get()) }
     viewModel { ForgetPassordViewModel(get(),get()) }

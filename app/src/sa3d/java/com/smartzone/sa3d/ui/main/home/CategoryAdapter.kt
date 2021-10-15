@@ -1,4 +1,4 @@
-package com.smartzone.rose_roman.ui.main.home
+package com.smartzone.sa3d.ui.main.home
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.smartzone.diva_wear.R
 import com.smartzone.diva_wear.databinding.ItemCategoryBinding
 import com.smartzone.diva_wear.databinding.ItemCategoryViewBinding
-import com.smartzone.rose_roman.utilis.LanguageType
-import com.smartzone.rose_roman.utilis.SavePrefs
-import com.smartzone.rose_roman.data.pojo.Category
-import com.smartzone.rose_roman.data.pojo.User
-import com.smartzone.rose_roman.utilis.AppUtils
+import com.smartzone.myapp.data.pojo.Category
+import com.smartzone.myapp.data.pojo.User
+import com.smartzone.myapp.utilis.AppUtils
+import com.smartzone.myapp.utilis.LanguageType
+import com.smartzone.myapp.utilis.SavePrefs
 
 
 class CategoryAdapter(

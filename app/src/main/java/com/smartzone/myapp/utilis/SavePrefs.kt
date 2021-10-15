@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 
 import com.google.gson.Gson
+import com.smartzone.diva_wear.BuildConfig
 
 
 enum class LanguageType(val lang: String) {
@@ -57,9 +58,11 @@ class SavePrefs<T>(activity: Context, cls: Class<T>) {
     }
 
     fun getLanguage(): String {
-        return prefs!!.getString(LANG, LanguageType.ARABIC.lang)!!
+        return if (BuildConfig.FLAVOR == "horizon")
+            prefs!!.getString(LANG, LanguageType.ARABIC.lang)!!
+        else
+            prefs!!.getString(LANG, LanguageType.ENGLISH.lang)!!
     }
-
 
 
     fun clear() {

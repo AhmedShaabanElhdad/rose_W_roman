@@ -50,12 +50,14 @@ class OrderAddressActivity : BaseActivity<ActivityOrderAddressBinding>() {
                     ), Toast.LENGTH_LONG
                 ).show()
             } else {
-                startActivity(OrderDetailsActivity.getIntent(this, promocode, address))
+                startActivity(OrderDetailsActivity.getIntent(this, promocode, address,lat,lon))
             }
         }
     }
 
     var address = ""
+    var lat = ""
+    var lon = ""
 
     //    val handler=object : Handler(Looper.getMainLooper()){
 //        override fun handleMessage(msg: Message) {
@@ -110,7 +112,11 @@ class OrderAddressActivity : BaseActivity<ActivityOrderAddressBinding>() {
             }
 
             binding.addresses.setOnCheckedChangeListener { group, checkedId ->
-                address = (findViewById<MyRadioButton>(checkedId)).getAddress()!!.address
+                var myAddress = (findViewById<MyRadioButton>(checkedId)).getAddress()!!
+                address = myAddress.address
+                lat = myAddress.latitude
+                lon = myAddress.longitude
+
             }
 
 //                DeliveryCityAdapter(this, android.R.layout.simple_spinner_item, cities)

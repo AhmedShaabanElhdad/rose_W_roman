@@ -1,4 +1,4 @@
-package com.smartzone.rose_roman.ui.main.home
+package com.smartzone.sa3d.ui.main.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,8 +6,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.smartzone.diva_wear.R
 import com.smartzone.diva_wear.databinding.ItemHomeImageSliderBinding
-import com.smartzone.rose_roman.utilis.AppUtils
-import com.smartzone.rose_roman.data.pojo.Slider
+import com.smartzone.myapp.utilis.AppUtils
+import com.smartzone.myapp.data.pojo.Slider
 
 class SlidderAdapter(
     val sliders: List<Slider>,

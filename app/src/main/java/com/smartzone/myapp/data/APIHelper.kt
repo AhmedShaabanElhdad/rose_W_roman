@@ -127,12 +127,16 @@ interface APIHelper {
         @Query("user_id") user_id: String
     ): Single<PromoCodeResponse>
 
+
     @GET("main/add_cart_multiple")
     fun add_cart_multiple(
         @Query("user_id") user_id: String,
         @Query("city_id") city_id: String,
         @QueryMap meta: Map<String, String>,
-        @Query("promocode") promocode: String = "0"
+        @Query("promocode") promocode: String = "",
+        @Query("longitude") longitude: String = "0",
+        @Query("latitude") latitude: String = "0",
+        @Query("address") address: String = ""
     ): Single<BaseObjectResponse>
 
     @GET("main/get_cart")
@@ -170,7 +174,7 @@ interface APIHelper {
         @Query("user_id") userId: String,
         @Query("title") title: String,
         @Query("body") body: String?,
-        @Query("image") image: String?
+        @Query("image") image: String = ""
     ): Single<ResponseSendFedback>
 
 

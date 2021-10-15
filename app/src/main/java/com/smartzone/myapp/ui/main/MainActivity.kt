@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.smartzone.diva_wear.BuildConfig
 import com.smartzone.myapp.MyApp
 import com.smartzone.diva_wear.R
 import com.smartzone.diva_wear.databinding.ActivityMainBinding
@@ -14,7 +15,8 @@ import com.smartzone.myapp.ui.base.BaseViewModel
 import com.smartzone.myapp.ui.dailogs.PleaseRegisterDialog
 
 
-class MainActivity : BaseActivity<ActivityMainBinding>() {
+class
+MainActivity : BaseActivity<ActivityMainBinding>() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +48,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     private val navListener: BottomNavigationView.OnNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.getItemId()) {
-                R.id.navigation_cart,R.id.navigation_orders,R.id.navigation_categories,R.id.navigation_setting ->  PleaseRegisterDialog(this@MainActivity).show()
+                R.id.navigation_cart,R.id.navigation_orders,R.id.navigation_offers,R.id.navigation_setting ->  PleaseRegisterDialog(this@MainActivity).show()
+//                R.id.navigation_cart,R.id.navigation_orders,R.id.navigation_categories,R.id.navigation_setting ->  PleaseRegisterDialog(this@MainActivity).show()
             }
             true
         }

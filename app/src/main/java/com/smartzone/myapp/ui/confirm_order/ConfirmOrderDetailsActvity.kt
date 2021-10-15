@@ -3,6 +3,7 @@ package com.smartzone.myapp.ui.confirm_order
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.smartzone.diva_wear.BuildConfig
@@ -23,6 +24,8 @@ class ConfirmOrderDetailsActvity : BaseActivity<ActivityConfirmOrderDetailsBindi
     lateinit var cart: CartManger
     var promocode = ""
     var address = ""
+    var lon="0"
+    var lat="0"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +34,9 @@ class ConfirmOrderDetailsActvity : BaseActivity<ActivityConfirmOrderDetailsBindi
         cart = MyApp.getCart()
         binding.back.setOnClickListener { onBackPressed() }
         binding.recycleProduct.adapter = OrderAdapter(cart.getCartList())
+
+        if (BuildConfig.TAX.toFloat()==0.0f)
+            binding.taxlayout.visibility = View.GONE
 
         binding.price.text = "${cart.calculatePrice()}"
         cart.orderBean.delviry?.apply {
@@ -41,11 +47,13 @@ class ConfirmOrderDetailsActvity : BaseActivity<ActivityConfirmOrderDetailsBindi
 
         promocode = intent.extras?.getString("promocode", "").toString()
         address = intent.extras?.getString("address", "").toString()
+        lat = intent.extras?.getString("lat", "0").toString()
+        lon = intent.extras?.getString("lon", "0").toString()
 
 //        binding.location.text = "${cart.orderBean.delviry?.name}"
         binding.location.text = address
         binding.confirmButton.setOnClickListener {
-            viewModel.addCart(promocode)
+            viewModel.addCart(promocode,lat,lon,address)
         }
 
         if (promocode.isNotEmpty())
@@ -89,10 +97,12 @@ class ConfirmOrderDetailsActvity : BaseActivity<ActivityConfirmOrderDetailsBindi
     }
 
     companion object {
-        fun getIntent(context: Context, promocode: String, address: String): Intent {
+        fun getIntent(context: Context, promocode: String, address: String,latitude:String,longitude:String): Intent {
             val intent = Intent(context, ConfirmOrderDetailsActvity::class.java)
             intent.putExtra("promocode", promocode)
             intent.putExtra("address", address)
+            intent.putExtra("lat", latitude)
+            intent.putExtra("lon", longitude)
             return intent
         }
     }

@@ -3,6 +3,7 @@ package com.smartzone.myapp.ui.confirm_order
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.smartzone.myapp.MyApp
+import com.smartzone.myapp.data.pojo.Address
 import com.smartzone.myapp.data.pojo.User
 import com.smartzone.myapp.data.reponse.PromoCodeResponse
 import com.smartzone.myapp.data.repositery.CarRepositery
@@ -19,7 +20,7 @@ class ConfirmOrderDetailsViewModel(
     val id = MutableLiveData<String>()
     val checkPromo = MutableLiveData<PromoCodeResponse>()
 
-    fun addCart(promocode: String) {
+    fun addCart(promocode: String,lat:String,lon:String,address: String) {
         val cart = MyApp.getCart()
         val map = HashMap<String, String>()
         val list = cart.getCartList()
@@ -33,7 +34,7 @@ class ConfirmOrderDetailsViewModel(
         setLoading(true)
         val user = SavePrefs(MyApp.getApp(), User::class.java).load()
         add {
-            cartRepositery.add_cart(user?.id!!, cart.orderBean.delviry!!.id, promocode, map)
+            cartRepositery.add_cart(user?.id!!, cart.orderBean.delviry!!.id, promocode, map,lat,lon,address)
                 .with(schedulerProvider)
 //            cartRepositery.add_cart("1",cart.orderBean.delviry!!.id,promocode,map).with(schedulerProvider)
                 .subscribe({

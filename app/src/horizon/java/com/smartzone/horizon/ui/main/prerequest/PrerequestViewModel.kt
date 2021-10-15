@@ -22,7 +22,8 @@ class PrerequestViewModel(
         setLoading(true)
         val user = SavePrefs(MyApp.getApp(), User::class.java).load()
         add {
-            generalRepositery.sendPrescription(userId = user!!.id,title = name,body = message,image = pathImage.value)
+
+            generalRepositery.sendPrescription(userId = user!!.id,title = name,body = message,image = pathImage.value?:"")
                 .with(schedulerProvider).subscribe({
                     if (it.status){
                         success.value=true
@@ -34,7 +35,7 @@ class PrerequestViewModel(
         }
     }
 
-    var pathImage=MutableLiveData<String>("")
+    var pathImage=MutableLiveData<String>()
 
     fun uploadImage(file: File){
         setLoading(true)

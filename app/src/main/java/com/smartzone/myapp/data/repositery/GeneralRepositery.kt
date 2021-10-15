@@ -20,7 +20,7 @@ class GeneralRepositery(private val apiHelper: APIHelper) {
     fun sendFeadBack(mobile:String,name:String,message:String): Single<ResponseSendFedback> {
         return apiHelper.sendFeedBack(mobile,name,message)
     }
-    fun sendPrescription(userId:String,title:String,body:String?,image:String?): Single<ResponseSendFedback> {
+    fun sendPrescription(userId:String,title:String,body:String?,image:String): Single<ResponseSendFedback> {
         return apiHelper.sendPrescription(userId,title,body,image)
     }
 

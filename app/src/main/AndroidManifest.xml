@@ -69,7 +69,7 @@
         <activity android:name="com.smartzone.myapp.ui.order_details.details.OrderDetailsActivity" />
         <activity android:name="com.smartzone.myapp.ui.order_details.address.OrderAddressActivity" />
         <activity android:name="com.smartzone.myapp.ui.forget_password.ForgetPasswordActivity" />
-        <activity android:name="com.smartzone.horizon.ui.register.RegisterActivity" />
+        <activity android:name="com.smartzone.sa3d.ui.register.RegisterActivity" />
         <activity
             android:name="com.smartzone.myapp.ui.login.LoginActivity"
             android:windowSoftInputMode="adjustPan" />

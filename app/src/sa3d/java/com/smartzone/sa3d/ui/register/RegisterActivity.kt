@@ -1,4 +1,4 @@
-package com.smartzone.horizon.ui.register
+package com.smartzone.sa3d.ui.register
 
 import android.content.Context
 import android.content.Intent
@@ -6,19 +6,18 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import com.smartzone.rose_roman.MyApp
+import com.smartzone.myapp.MyApp
 import com.smartzone.diva_wear.R
-import com.smartzone.rose_roman.data.pojo.City
+import com.smartzone.myapp.data.pojo.City
 import com.smartzone.diva_wear.databinding.ActivityRegisterBinding
-import com.smartzone.rose_roman.ui.base.BaseActivity
-import com.smartzone.rose_roman.ui.base.BaseViewModel
-import com.smartzone.rose_roman.ui.dailogs.CityDialog
-import com.smartzone.rose_roman.utilis.SavePrefs
-import com.smartzone.rose_roman.ui.main.MainActivity
-import com.smartzone.rose_roman.ui.register.RegisterActivity
-import com.smartzone.rose_roman.ui.register.RegisterViewModel
-import com.smartzone.rose_roman.ui.register.User
-import com.smartzone.rose_roman.utilis.SOCIAL_RES
+import com.smartzone.myapp.data.pojo.User
+import com.smartzone.myapp.ui.base.BaseActivity
+import com.smartzone.myapp.ui.base.BaseViewModel
+import com.smartzone.myapp.ui.dailogs.CityDialog
+import com.smartzone.myapp.utilis.SavePrefs
+import com.smartzone.myapp.ui.main.MainActivity
+import com.smartzone.myapp.ui.register.RegisterViewModel
+import com.smartzone.myapp.utilis.SOCIAL_RES
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.regex.Pattern
 
@@ -124,7 +123,7 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>() {
 //                binding.etName.text.toString()
 //            )
 
-            SavePrefs(this, com.smartzone.rose_roman.data.pojo.User::class.java).save(it)
+            SavePrefs(this, User::class.java).save(it)
             MyApp.getApp().appPreferencesHelper.setLogin(true)
             startActivity(
                 MainActivity.getIntent(this)
