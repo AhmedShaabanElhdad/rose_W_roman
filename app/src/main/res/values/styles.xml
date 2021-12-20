@@ -8,6 +8,10 @@
         <item name="android:homeAsUpIndicator">@color/white</item>
     </style>
 
+    <style name="CustomTheme">
+        <item name="android:background">@color/white</item>
+    </style>
+
     <style name="PopupAnimation" parent="Widget.AppCompat.PopupWindow">
         <item name="android:windowEnterAnimation">@anim/bottom_up</item>
         <item name="android:windowExitAnimation">@anim/bottom_down</item>

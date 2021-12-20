@@ -144,5 +144,7 @@
 
     <string name="new_password">الباسورد الجديد</string>
     <string name="confirm_password">تأكيد الباسورد</string>
+    <string name="note">اضف ملاحظاتك هنا</string>
+    <string name="upload_prescription">صور الروشتة وابعتها</string>
 
 </resources>

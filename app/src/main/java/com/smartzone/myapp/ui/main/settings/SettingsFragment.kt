@@ -104,7 +104,8 @@ class SettingsFragment : Fragment() {
         }
 
         binding.offers.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_setting_to_navigation_offers)
+//            findNavController().navigate(R.id.action_navigation_setting_to_navigation_offers)
+            findNavController().navigate(R.id.action_navigation_setting_to_navigation_favourite)
         }
 
         binding.logout.setOnClickListener {

@@ -48,7 +48,7 @@ MainActivity : BaseActivity<ActivityMainBinding>() {
     private val navListener: BottomNavigationView.OnNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.getItemId()) {
-                R.id.navigation_cart,R.id.navigation_orders,R.id.navigation_offers,R.id.navigation_setting ->  PleaseRegisterDialog(this@MainActivity).show()
+                R.id.navigation_cart,R.id.navigation_orders,R.id.navigation_offers,R.id.navigation_setting,R.id.navigation_prescription ->  PleaseRegisterDialog(this@MainActivity).show()
 //                R.id.navigation_cart,R.id.navigation_orders,R.id.navigation_categories,R.id.navigation_setting ->  PleaseRegisterDialog(this@MainActivity).show()
             }
             true

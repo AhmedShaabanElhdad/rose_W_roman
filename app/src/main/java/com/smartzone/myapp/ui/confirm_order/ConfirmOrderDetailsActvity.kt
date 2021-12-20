@@ -38,6 +38,11 @@ class ConfirmOrderDetailsActvity : BaseActivity<ActivityConfirmOrderDetailsBindi
         if (BuildConfig.TAX.toFloat()==0.0f)
             binding.taxlayout.visibility = View.GONE
 
+        if (BuildConfig.FLAVOR == "horizon"){
+            binding.etNote.visibility = View.VISIBLE
+            binding.noteHeader.visibility = View.VISIBLE
+        }
+
         binding.price.text = "${cart.calculatePrice()}"
         cart.orderBean.delviry?.apply {
             shipping = this.price.toFloat()
@@ -53,7 +58,7 @@ class ConfirmOrderDetailsActvity : BaseActivity<ActivityConfirmOrderDetailsBindi
 //        binding.location.text = "${cart.orderBean.delviry?.name}"
         binding.location.text = address
         binding.confirmButton.setOnClickListener {
-            viewModel.addCart(promocode,lat,lon,address)
+            viewModel.addCart(promocode,lat,lon,address,binding.etNote.text.toString())
         }
 
         if (promocode.isNotEmpty())

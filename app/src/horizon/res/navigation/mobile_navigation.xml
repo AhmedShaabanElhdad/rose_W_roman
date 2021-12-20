@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.smartzone.sa3d.ui.main.home.HomeFragment"
+        android:name="com.smartzone.horizon.ui.main.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -35,7 +35,7 @@
         android:id="@+id/navigation_setting"
         android:name="com.smartzone.myapp.ui.main.settings.SettingsFragment"
         android:label="@string/title_settings"
-        tools:layout="@layout/settings_fragment" >
+        tools:layout="@layout/settings_fragment">
         <action
             android:id="@+id/action_navigation_setting_to_navigation_favourite"
             app:destination="@id/navigation_favourite" />
@@ -46,9 +46,15 @@
         android:id="@+id/navigation_offers"
         android:name="com.smartzone.myapp.ui.main.offer.OfferFragment"
         android:label="@string/title_offer"
-        tools:layout="@layout/offer_fragment" >
+        tools:layout="@layout/offer_fragment">
 
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_prescription"
+        android:name="com.smartzone.horizon.ui.main.prerequest.PrerequestFragment"
+        android:label="@string/title_prescription"
+        tools:layout="@layout/fragment_prerequest"/>
 
 
     <action
@@ -58,32 +64,10 @@
         app:popUpToInclusive="true" />
 
 
-
     <action
         android:id="@+id/home"
         app:destination="@id/navigation_home"
         app:popUpTo="@id/navigation_home"
         app:popUpToInclusive="true" />
 
-
-    <!--    <fragment-->
-    <!--        android:id="@+id/navigation_categories"-->
-    <!--        android:name="com.smartzone.horizon.ui.main."-->
-    <!--        android:label="@string/title_prescription"-->
-    <!--        tools:layout="@layout/fragment_prerequest" >-->
-    <!--    </fragment>-->
-
-
-
-    <!--    <fragment-->
-    <!--        android:id="@+id/navigation_subcategories"-->
-    <!--        android:name="com.smartzone.rose_roman.ui.main.categories.SubCategoriesFragment"-->
-    <!--        android:label="@string/title_categories"-->
-    <!--        tools:layout="@layout/fragment_sub_categories">-->
-
-    <!--        <argument android:name="main_id"-->
-    <!--            app:argType="string"-->
-    <!--            app:nullable="false"/>-->
-
-    <!--    </fragment>-->
 </navigation>

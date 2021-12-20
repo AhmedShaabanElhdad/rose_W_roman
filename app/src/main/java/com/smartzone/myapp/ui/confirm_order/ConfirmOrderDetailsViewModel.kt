@@ -20,7 +20,7 @@ class ConfirmOrderDetailsViewModel(
     val id = MutableLiveData<String>()
     val checkPromo = MutableLiveData<PromoCodeResponse>()
 
-    fun addCart(promocode: String,lat:String,lon:String,address: String) {
+    fun addCart(promocode: String,lat:String,lon:String,address: String,notes:String = "") {
         val cart = MyApp.getCart()
         val map = HashMap<String, String>()
         val list = cart.getCartList()
@@ -31,6 +31,12 @@ class ConfirmOrderDetailsViewModel(
             map["size_id[$index]"] = "${value.size_id}"
             map["color_id[$index]"] = "${value.color_id}"
         }
+
+        if (notes.isNotEmpty()){
+            map["notes"] = notes
+        }
+
+
         setLoading(true)
         val user = SavePrefs(MyApp.getApp(), User::class.java).load()
         add {

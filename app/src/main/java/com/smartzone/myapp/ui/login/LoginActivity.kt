@@ -10,11 +10,12 @@ import com.smartzone.myapp.MyApp
 import com.smartzone.diva_wear.R
 import com.smartzone.myapp.data.pojo.User
 import com.smartzone.diva_wear.databinding.ActivityLoginBinding
+import com.smartzone.horizon.ui.register.RegisterActivity
 import com.smartzone.myapp.ui.base.BaseActivity
 import com.smartzone.myapp.ui.base.BaseViewModel
 import com.smartzone.myapp.ui.forget_password.ForgetPasswordActivity
 import com.smartzone.myapp.ui.main.MainActivity
-import com.smartzone.sa3d.ui.register.RegisterActivity
+//import com.smartzone.sa3d.ui.register.RegisterActivity
 import com.smartzone.myapp.utilis.SOCIAL_RES
 import com.smartzone.myapp.utilis.SavePrefs
 import org.koin.androidx.viewmodel.ext.android.viewModel

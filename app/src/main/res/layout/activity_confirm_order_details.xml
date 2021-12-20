@@ -195,6 +195,45 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white_grey"
+                    android:fontFamily="@font/neo_sans_medium"
+                    android:padding="@dimen/_10sdp"
+                    android:id="@+id/note_header"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:text="@string/tittle_method_payment"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt16" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp"
+                    android:background="@drawable/shape_rect_extra_round_transparent_bg_accent_border_1dp"
+                    android:fontFamily="@font/neo_sans_medium"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:id="@+id/et_note"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:hint="@string/note"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt16" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@color/white_grey"
                     android:fontFamily="@font/neo_sans_medium"

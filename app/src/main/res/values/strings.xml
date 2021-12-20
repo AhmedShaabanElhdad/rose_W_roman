@@ -147,6 +147,8 @@
 
     <string name="new_password">New password</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="note">Add Your Special Note</string>
+    <string name="upload_prescription">take and send prescription photo</string>
 
 
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayoutMediator
 import com.smartzone.diva_wear.R
@@ -14,6 +15,7 @@ import com.smartzone.myapp.data.pojo.Slider
 import com.smartzone.myapp.data.pojo.User
 import com.smartzone.myapp.ui.base.BaseFragment
 import com.smartzone.myapp.ui.base.BaseViewModel
+import com.smartzone.myapp.ui.dailogs.PleaseRegisterDialog
 import com.smartzone.myapp.ui.main.MainActivity
 import com.smartzone.myapp.ui.order_details.details.OrderDetailsViewModel
 import com.smartzone.myapp.ui.products.ProductViewModel
@@ -37,7 +39,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 //        binding.pager.clipToPadding = false
 //        binding.pager.pageMargin = ViewUtils.dpToPx(10.0f)
 
-        //binding.pager.setPageTransformer(false,transformer)
+//        binding.pager.setPageTransformer(false,transformer)
 //        binding.recycleCategories.layoutManager=LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,false)
         viewModel.loadData()
         viewModel.loadLink()
@@ -47,6 +49,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
         binding.notification.setOnClickListener {
             (activity as MainActivity).openNotification()
+        }
+
+        binding.cardPrescription.setOnClickListener {
+            if (MyApp.getApp().appPreferencesHelper.isLogin())
+                findNavController().navigate(R.id.navigation_prescription)
+            else
+                PleaseRegisterDialog(requireContext()).show()
         }
 
         binding.etSearch.setOnEditorActionListener { view, actionId, event ->
@@ -107,7 +116,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             }
 
         })
-        
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -140,8 +149,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
             binding.recycleCat.adapter = CategoryAdapter(response.categories) {
                 startActivity(ProductsActivity.getIntent(requireContext()).apply {
-                    putExtra(ID_KEY,it.id)
-                    putExtra(CATEGORY_NAME,it.name)
+                    putExtra(ID_KEY, it.id)
+                    putExtra(CATEGORY_NAME, it.name)
                 })
             }
         })
